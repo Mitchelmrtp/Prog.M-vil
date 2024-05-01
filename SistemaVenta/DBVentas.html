@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBVentas</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="aplicactivo-móvil-de-un-sistema-de-ventas">Aplicactivo móvil de un Sistema de Ventas</h1>
+<p>El sistema de ventas es una herramienta fundamental para cualquier negocio que involucre la compra y venta de productos. Esta base de datos está diseñada para gestionar eficientemente las transacciones comerciales, manteniendo un registro detallado de los clientes, proveedores, productos, compras y ventas. Al mismo tiempo, esto ayuda a tener una mejor gestión de la cantidad de ventas, stock y ganancias que se pueden obtener de la ventas de los diferentes productos.</p>
+<p><img src="https://i.imgur.com/mIxmdGb.png" alt="enter image description here"></p>
+<h2 id="entorno-de-desarrollo">Entorno de desarrollo</h2>
+<p>Flutter es un SDK de código abierto desarrollado por Google, con características similares al entorno de desarrollo Kotlin. Sin embargo, destaca como una herramienta superior para la creación de aplicaciones móviles debido a su facilidad de aprendizaje y su entorno de trabajo más eficiente, que no requiere recursos excesivos.</p>
+<h3 id="instalación-del-entorno-de-desarrollo">Instalación del Entorno de Desarrollo</h3>
+<h4 id="paso-1">Paso 1</h4>
+<p>Para iniciar, es necesario configurar el entorno de desarrollo. Para esto, se tiene que acceder a la página principal de Android Studio y proceder con la descarga del archivo de instalación y seguir una serie de procesos.<br>
+<img src="https://i.imgur.com/lL3OZm2.png" alt="" width="500"></p>
+<h4 id="paso-2">Paso 2</h4>
+<p>Una vez que hayas descargado el archivo, procederemos a instalarlo como cualquier otro software.<br>
+<img src="https://i.imgur.com/TH7aM9Q.png" alt="" width="500"></p>
+<h4 id="paso-3">Paso 3</h4>
+<img src="https://i.imgur.com/XxZnE5W.png" alt="" width="500">
+<h4 id="paso-4">Paso 4</h4>
+<img src="https://i.imgur.com/SwralHo.png" alt="" width="500">
+<h4 id="paso-5">Paso 5</h4>
+<img src="https://i.imgur.com/lGsSUda.png" alt="" width="500">
+<h4 id="paso-6">Paso 6</h4>
+<img src="https://i.imgur.com/PdYx0Bg.png" alt="" width="500">
+<h4 id="paso-7">Paso 7</h4>
+<img src="https://i.imgur.com/AOg8ReE.png" alt="" width="500">
+<h4 id="paso-8">Paso 8</h4>
+<img src="https://i.imgur.com/ptN4tvu.png" alt="" width="500">
+<h4 id="paso-9">Paso 9</h4>
+<p>Para completar, se tiene que aceptar los acuerdos de licencia y darle al botón Finish.<br>
+<img src="https://i.imgur.com/prKzLk8.png" alt="" width="500"></p>
+<h4 id="paso-10">Paso 10</h4>
+<p>Por último, se tiene que instalar un complemento de dispositivo móvil virtual.<br>
+<img src="https://i.imgur.com/gb188UG.png" alt="" width="500"></p>
+<h4 id="paso-11">Paso 11</h4>
+<p>Para trabajar con Flutter, se tiene que descargar de preferencia la última versión desde su página web principal <a href="https://docs.flutter.dev/">https://docs.flutter.dev/</a><br>
+<img src="https://i.imgur.com/XKLMOLG.png" alt="" width="500"></p>
+<h2 id="diagrama-de-despliegue">Diagrama de despliegue</h2>
+<img src="https://i.imgur.com/oxrcuL4.png" alt="" width="500">
+<h2 id="requerimientos-funcionales">Requerimientos Funcionales</h2>
+
+<table>
+<thead>
+<tr>
+<th>Requerimiento</th>
+<th>Descripción del requerimiento</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF1</td>
+<td><code>'Los usuarios deben poder registrarse en la aplicación móvil y tendrán que 	 proporcionar la información necesaria como nombre, dni, dirección y más'</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RF2</td>
+<td><code>"Los usuarios registrados podrán iniciar sesión mediante la credencial añadida a la hora del registro."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RF3</td>
+<td><code>"Los usuarios podrán navegar mediante las diferentes opciones del aplicativo y visualizar los productos disponibles y organizarlos segun la categoría que deseen."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RF4</td>
+<td><code>"Los usuarios tendrán acceso una lupa de busqueda para poder buscar algún producto en especifico."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RF5</td>
+<td><code>"Los usuarion deben de tener la opción de verificar detalles completos sobre el articulo que deseen comprar como el nombre, descripción, precio y la cantidad de stock disponible."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RF6</td>
+<td><code>"Los usuarios deben de poder añadir cualquier producto que deseen al carrito de compras, gestionar la cantidad que quieran y eliminar en caso ya no deseen comprarlo."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RF7</td>
+<td><code>"Los usuarios deben de poder acceder al proceso de compra, proporcionar la información necesaria como nombre, dirección de envio, dni y número de teléfono"</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RF8</td>
+<td><code>"El usuario podrá acceder a su historial de compras a través de la aplicación y en caso tenga una compra actual, verificar el seguimiento del mismo y descargar la boleta o recibo."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RF9</td>
+<td><code>"Los usuarios deben de poder gestionar el perfil que se hayan creado previamente, asi como la dirección, método pago, cambiar la contraseña y sus datos personales."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RF10</td>
+<td><code>"Los usuarios podrán añadir productos a un apartado de favoritos y visualizar todos lo que hayan incluido, asi como poder eliminar si lo desea."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RF11</td>
+<td><code>"Los usuarios podrán acceder a un apartado donde puedan verificar todas las categorías existentes en el aplicativo."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RF12</td>
+<td><code>"Los usuarios podrás tener acceso a los diferentes canales de atención para consultas o dudas sobre su compra."</code></td>
+<td></td>
+</tr>
+</tbody>
+</table><h2 id="requerimientos-no-funcionales">Requerimientos No Funcionales</h2>
+
+<table>
+<thead>
+<tr>
+<th>Requerimiento</th>
+<th>Descripción del requerimiento</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RNF1</td>
+<td><code>'La aplicación debe ser fácil de usar mediante una interfaz intuitiva para que tengan una experiencia fluida.'</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RNF2</td>
+<td><code>"La aplicación debe estar correctamente optimizado para que pueda ejecutarse en cualquier dispositvo."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RNF3</td>
+<td><code>"La aplicación debe de resguardar correctamente los datos personales de los usuarios mediante una seguridad robusta."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RNF4</td>
+<td><code>"La aplicación debe estar disponible para iOS y android para acceder a un mayor publico de posibles compradores."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RNF5</td>
+<td><code>"El sistema tiene que tener la capacidad de manejar el gran incremento de usuarion sin dejar de la lado el rendimiento del aplicativo."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RNF6</td>
+<td><code>"El aplicativo debe estar diseñado para un facil mantenimiento y actualización para añadir nuevas caracteristicas que se deseen implementar en el futuro."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RNF7</td>
+<td><code>"Los usuarios deben de poder acceder al proceso de compra, proporcionar la información necesaria como nombre, dirección de envio, dni y número de teléfono"</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RNF8</td>
+<td><code>"El aplicativo debe de estar disponible en Google Play Store o en la AppStore para una fácil instalación."</code></td>
+<td></td>
+</tr>
+<tr>
+<td>RNF9</td>
+<td><code>"La aplicación tiene que estar optimizada para el consumo minimo de los datos móviles."</code></td>
+<td></td>
+</tr>
+</tbody>
+</table><h2 id="diagrama-de-caso-de-uso-requerimientos-funcionales">Diagrama de Caso de uso (requerimientos funcionales)</h2>
+  <img src="https://i.imgur.com/ZfUkw0N.png" alt="" width="600">
+<h2 id="descripción-de-casos-de-uso-mockups">Descripción de casos de uso (Mockups)</h2>
+<h3 id="rf1-registro-de-usuarios">RF1: Registro de usuarios:</h3>
+<p>Cada nuevo usuario tiene la opción de registrarse en caso de no tener una cuenta para acceder a la aplicación. Para ello, deben ingresar sus datos personales, como nombres, apellidos y DNI, así como un correo electrónico válido para la verificación.<br>
+<img src="https://i.imgur.com/2kUrbAm.png" alt="" width="200"></p>
+<h3 id="rf2-inicio-de-sesión">RF2: Inicio de Sesión:</h3>
+<p>Para tener acceso a compras con mayor seguridad se sugiere al usuario iniciar sesión para poder verificar la identidad del usuario y no tener problemas en el proceso de la compra y entrega del producto.<br>
+<img src="https://i.imgur.com/jEm9HxZ.png" alt="" width="200"></p>
+<h3 id="rf3-visualización-de-productos">RF3: Visualización de Productos:</h3>
+<p>El usuario debe de poder ver todos los articulos disponibles y desplazarse por la diferentes opciones del aplicativo.<br>
+<img src="https://i.imgur.com/KgX34A2.png" alt="" width="200"></p>
+<h3 id="rf4-búsqueda-de-productos">RF4: Búsqueda de Productos:</h3>
+<p>Para facilitar el acceso a un producto en especifico, se tiene la lupa de busqueda de la aplicación y al mismo tiempo, obtener los resultados más idoneos segun la palabra clave que se incerte dentro de la lupa.<br>
+<img src="https://i.imgur.com/ITqDgX1.png" alt="" width="200"></p>
+<h3 id="rf5-detalles-del-producto">RF5: Detalles del Producto:</h3>
+<p>Para fortalecer la relación entre el cliente y la empresa, es mejor añadir los detalles más importante del producto y de esta manera, el cliente puede comparar con otros productos similares para llegar a una decisión final de compra.<br>
+<img src="https://i.imgur.com/NL9gKwn.png" alt="" width="350"></p>
+<h3 id="rf6-carrito-de-compras">RF6: Carrito de Compras:</h3>
+<p>En este apartado es importante que el cliente pueda tener la opción de agregar la cantidad de articulos a comprar, eliminar del carro de compras y verificar el precio del producto para procedecer con la compra final.<br>
+<img src="https://i.imgur.com/FaWJ0mo.png" alt="" width="200"></p>
+<h3 id="rf7-proceso-de-compra">RF7: Proceso de Compra:</h3>
+<p>En este proceso, es fundamental y de forma obligatoria solicitar al cliente que brinde todos sus datos personales, agregar una dirección correcta para la entrega y permitir que agregue un medio de pago. Del mismo modo, tener un resumen de la compra y verificar el costo final de la compra.<br>
+<img src="https://i.imgur.com/QrlERmd.png" alt="" width="200"></p>
+<h3 id="rf8-historial-de-compras">RF8: Historial de Compras:</h3>
+<p>El historial de compras proporciona a los clientes la capacidad de visualizar tanto las compras pasadas como las actuales, permitiendo un seguimiento completo del proceso de compra. Además de ver el historial de transacciones, los clientes tienen la opción de descargar las boletas de compra correspondientes. Esta funcionalidad garantiza una experiencia completa y transparente para los clientes, brindándoles acceso a la información necesaria y la documentación relevante para sus compras.<br>
+<img src="https://i.imgur.com/9d7MoSj.png" alt="" width="200"></p>
+<h3 id="rf9-gestión-de-perfil">RF9: Gestión de Perfil:</h3>
+<p>La gestión de perfil permite a los usuarios tener control total sobre su información personal. En esta sección, los usuarios pueden añadir, modificar o eliminar datos para asegurarse de que su perfil esté siempre actualizado y preciso. Esta funcionalidad garantiza que los usuarios puedan mantener su información personal de manera fácil y conveniente, asegurando una experiencia personalizada y precisa en la plataforma.<br>
+<img src="https://i.imgur.com/NTllirN.png" alt="" width="200"></p>
+<h3 id="rf10-favoritos">RF10: Favoritos:</h3>
+<p>La sección de favoritos brinda a los usuarios la capacidad de acceder fácil y rápidamente a los productos que han marcado como favoritos. Además de facilitar la compra de productos preferidos, los usuarios tienen la opción de eliminar productos de su lista de favoritos si así lo desean.<br>
+<img src="https://i.imgur.com/9wVUm51.png" alt="" width="200"></p>
+<h3 id="rf11-categorías">RF11: Categorías:</h3>
+<p>En la opción de categorías, los usuarios pueden explorar un listado completo de todos los productos disponibles organizados según características específicas. Esta funcionalidad facilita la búsqueda del cliente al permitirles navegar por categorías temáticas y encontrar fácilmente los productos que se ajusten a sus necesidades y preferencias.<br>
+<img src="https://i.imgur.com/0Vos4OE.png" alt="" width="200"></p>
+<h3 id="rf12-canales-de-atención">RF12: Canales de Atención:</h3>
+<p>Los canales de atención al cliente son los diferentes medios disponibles para que los usuarios se comuniquen con el servicio de atención por motivos de dudas o incovenientes por alguna compra realizada.<br>
+<img src="https://i.imgur.com/gQozQSg.png" alt="" width="200"></p>
+</div>
+</body>
+
+</html>
